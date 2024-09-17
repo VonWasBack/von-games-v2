@@ -1,0 +1,83 @@
+/* src/components/Header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .open {
+    display: block;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 1024px) { /* Tablets */
+    .nav ul {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Large phones and tablets */
+    .nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .open {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Small mobile phones */
+    .logo {
+      font-size: 20px;
+    }
+  
+    .hamburger {
+      font-size: 20px;
+    }
+  }
+  

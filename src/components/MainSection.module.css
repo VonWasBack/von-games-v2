@@ -1,0 +1,41 @@
+/* src/components/MainSection.module.css */
+.main {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero {
+    margin-bottom: 40px;
+  }
+  
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 1024px) { /* Tablet */
+    .box {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Mobile */
+    .content {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Small Mobile */
+    .box {
+      font-size: 14px;
+    }
+  }
+  
