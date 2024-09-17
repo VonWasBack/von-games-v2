@@ -1,0 +1,11 @@
+/* src/components/GameSlider.module.css */
+.slider {
+    padding: 50px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  

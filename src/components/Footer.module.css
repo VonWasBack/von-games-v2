@@ -3,9 +3,16 @@
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .socialIcons a {
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    color: #007bff;
   }
   

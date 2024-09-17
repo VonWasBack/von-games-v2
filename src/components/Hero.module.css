@@ -1,0 +1,51 @@
+/* src/components/Hero.module.css */
+.hero {
+    height: 100vh;
+    background-image: url('https://example.com/your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .heroContent {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .ctaButton {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add a fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
